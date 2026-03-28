@@ -7,7 +7,7 @@ export const useAuth = () => useContext(AuthContext);
 export const AuthProvider = ({ children }) => {
   const [user,    setUser]    = useState(null);
   const [loading, setLoading] = useState(true);
-  const API = '/api';
+  const API = 'https://leadsmanagement-backend.onrender.com';
 
   /* ── Restore session on mount ── */
   useEffect(() => {
